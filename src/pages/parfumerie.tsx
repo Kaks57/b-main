@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { productService } from "src/services/productService.ts";
-import { Product } from "src/services/productService.ts"; // adapte si besoin
+import { productService, Product } from "@/services/productService"; // corrige le chemin et importe Product
 
 const ParfumeriePage = () => {
   const [parfums, setParfums] = useState<Product[]>([]);
 
   useEffect(() => {
     const fetchParfums = async () => {
-      const allProducts = await productService.getProducts();
-      const parfumsOnly = allProducts.filter((p) => p.category === "parfum");
-      setParfums(parfumsOnly);
+      try {
+        const allProducts = await productService.getProducts();
+        const parfumsOnly = allProducts.filter((p) => p.category === "parfum");
+        setParfums(parfumsOnly);
+      } catch (error) {
+        console.error("Erreur lors du chargement des parfums :", error);
+      }
     };
     fetchParfums();
   }, []);
