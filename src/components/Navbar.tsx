@@ -98,6 +98,10 @@ const Navbar = ({ onCartClick, cartCount }: NavbarProps) => {
             >
               Collections
             </Link>
+            
+            <Link to="/parfumerie" className="text-gray-700 hover:text-boutique-burgundy px-3 py-2 text-sm font-medium">
+              Parfumerie
+            </Link>
             <Link
               to="/about"
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-boutique-burgundy hover:bg-gray-50"
