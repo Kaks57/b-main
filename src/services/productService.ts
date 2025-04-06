@@ -496,7 +496,7 @@ class ProductService {
       id: "49",
       name: "Sacoche Christian Dior",
       description: "Sacoche élégante en cuir avec logo Dior, parfaite pour les sorties.",
-      price: 80,
+      price: 100,
       image: "/49.jpeg",
       category: "Sacs",
       available: true,
