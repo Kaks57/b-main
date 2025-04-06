@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { productService } from "../services/ProductService";
-
+import { productService } from "src/services/productService.ts";
+import { Product } from "src/services/productService.ts"; // adapte si besoin
 
 const ParfumeriePage = () => {
   const [parfums, setParfums] = useState<Product[]>([]);
