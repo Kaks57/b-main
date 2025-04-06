@@ -517,7 +517,17 @@ class ProductService {
       name: "Parfum Ajwad Lattafa",
       description: "Un parfum intense et mystérieux aux notes boisées et orientales.",
       price: 150,
-      image: "/ajwad.jpg",
+      image: "/AJWAD.jpeg",
+      category: "parfum",
+      available: true,
+      gender: "unisex"
+    },
+    {
+      id: "61",
+      name: "Parfum Ajwad Lattafa",
+      description: "Un parfum intense et mystérieux aux notes boisées et orientales.",
+      price: 150,
+      image: "/PINK.jpeg",
       category: "parfum",
       available: true,
       gender: "unisex"
